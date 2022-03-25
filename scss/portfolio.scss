@@ -1,0 +1,173 @@
+.portfolio {
+	width: 1100px;
+	margin: 0 auto 136px;
+
+	&__title {
+		position: relative;
+		font-weight: 800;
+		font-size: 32px;
+		line-height: 40px;
+
+		margin-bottom: 48px;
+
+		&:before {
+			content: '';
+			display: block;
+			width: 40px;
+			height: 1px;
+			position: absolute;
+			left: -7%;
+			top: 50%;
+
+			background-color: #222222;
+		}
+	}
+
+	&__examples {
+		display: grid; 
+		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-rows: repeat(4, 270px); 
+		gap: 10px 10px; 
+		grid-template-areas: 
+		"one one two"
+		"three four two"
+		"five six seven"
+		"five eight eight";
+
+		margin-bottom: 64px;
+		
+		& > div {
+			position: relative;
+			padding: 32px;
+
+			&::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				z-index: -1;
+				transition: filter 0.3s ease;
+			}
+
+			&:hover {
+				&::before {
+					filter: brightness(0.6);
+				}
+
+				.build {
+					opacity: 1;
+				}
+			}
+		}
+
+
+		&-1 {
+			grid-area: one;
+			
+			&::before {
+				background: url("../image/main/build_1.png") no-repeat;
+			}
+		}
+
+		&-2 {
+			grid-area: two;
+
+			&::before {
+				background: url("../image/main/build_2.png") no-repeat;
+			}
+		}
+
+		&-3 {
+			grid-area: three;
+
+			&::before {
+				background: url("../image/main/build_3.png") no-repeat;
+			}
+		}
+
+		&-4 {
+			grid-area: four;
+
+			&::before {
+				background: url("../image/main/build_4.png") no-repeat;
+			}
+		}
+
+		&-5 {
+			grid-area: five;
+			&::before {
+				background: url("../image/main/build_5.png") no-repeat;
+			}
+		}
+
+		&-6 {
+			grid-area: six;
+
+			&::before {
+				background: url("../image/main/build_6.png") no-repeat;
+			}
+		}
+
+		&-7 {
+			grid-area: seven;
+
+			&::before {
+				background: url("../image/main/build_7.png") no-repeat;
+			}
+		}
+
+		&-8 {
+			grid-area: eight;
+
+			&::before {
+				background: url("../image/main/build_8.png") no-repeat;
+			}
+		}
+	}
+
+	.build-name {
+		font-weight: 800;
+		font-size: 20px;
+		line-height: 24px;
+		letter-spacing: 0.03rem;
+
+		color: #fff;
+	}
+
+	.build {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+
+		position: absolute;
+		bottom: 32px;
+		opacity: 0;
+		transition: opacity 0.3s ease;
+
+		span {
+			font-family: 'Montserrat';
+			font-weight: 500;
+			font-size: 10px;
+			line-height: 12px;
+			
+			color: #FFF;
+			opacity: 0.7;
+
+			margin-bottom: 8px;
+		}
+
+		h4 {
+			font-weight: 800;
+			font-size: 14px;
+			line-height: 20px;
+
+			color: #fff;
+		}
+	}
+
+	button {
+		width: 13em;
+	}
+}

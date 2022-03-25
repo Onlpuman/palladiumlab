@@ -1,0 +1,45 @@
+@font-face {
+ font-family: "Gilroy";
+ src: url("/fonts/Gilroy-ExtraBold.otf") format("otf"), url("/fonts/Gilroy-Light.otf") format("otf");
+}
+
+main {
+	flex: 1 1 auto;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+}
+
+.button {
+	font-weight: 800;
+	font-size: 14px;
+	line-height: 20px;
+
+	position: relative;
+	display: block;
+	height: 40px;
+	border: 1px solid rgba(34, 34, 34, 0.3);
+
+	margin: 0 auto;
+	
+	background-color: transparent;
+
+	&:before {
+		content: '';
+		display: block;
+		width: 1.5em;
+		height: 1px;
+		position: absolute;
+		left: -0.85em;
+		top: 50%;
+
+		background-color: #222222;
+	}
+}
+
+.title-outline {
+	color: transparent;
+  -webkit-text-stroke: 1px #222;
+}

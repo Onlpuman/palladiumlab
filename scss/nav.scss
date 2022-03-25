@@ -1,0 +1,135 @@
+.nav {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  display: flex;
+  justify-content: space-between;
+  z-index: 1;
+  
+  height: 85px;
+
+  border-bottom: 1px solid #EBEBEB;
+
+  &__icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 85px;
+
+    border-width: 0 1px;
+    border-style: solid;
+    border-color: #EBEBEB;
+
+    &:first-child {
+      border-left-width: 0;
+    }
+
+    &:last-child {
+      border-right-width: 0;
+    }
+
+    svg {
+      fill: #222;
+    }
+
+    &:hover svg {
+      fill: #C6876D;
+    }
+
+    &.map:hover .nav__hover-panel,
+    &.tel:hover .nav__hover-panel {
+      display: flex;
+    }
+  }
+
+  &__menu-left {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+
+  &__hover-panel {
+    position: absolute;
+
+    display: none;
+    justify-content: center;
+    align-items: center;
+
+    width: calc(100% - 170px);
+    left: 85px;
+    height: 84px;
+    
+    background: #fff;
+    z-index: 1;
+
+    p {
+      font-weight: 800;
+      font-size: 14px;
+      line-height: 20px;
+      color: #222222;
+
+      padding: 0 20px;
+
+      &:first-child {
+        border-right: 1px solid #EBEBEB;
+      }
+    }
+
+    span {
+      color: #C6876D;
+    }
+
+    a {
+      font-weight: 800;
+      font-size: 30px;
+      line-height: 37px;
+
+      color: #222222;
+    }
+
+    button {
+      width: 15em;
+      margin: 0 30px;
+    }
+  }
+
+  &__menu-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+    flex-basis: 0;
+  }
+
+  &__menu-link {
+    position: relative;
+    font-weight: 800;
+    line-height: 20px;
+
+    color: rgba(34, 34, 34, 0.7);
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
+
+    &:hover {
+      color: #222;
+    }
+
+    &:hover:after {
+      content: '';
+      display: block;
+      width: 100%;
+      height: 1.5px;
+      position: absolute;
+      top: 260%;
+      background-color: #222222;
+    }
+  }
+}
+
