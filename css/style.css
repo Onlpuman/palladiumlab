@@ -506,7 +506,7 @@ header.container {
   -ms-grid-rows: (270px)[4];
       grid-template-rows: repeat(4, 270px);
   gap: 10px 10px;
-      grid-template-areas: "one one two" "three four two" "five six seven" "five eight eight";
+      grid-template-areas: "one one two" "three four two" "five six seven" "five eight eight";
   margin-bottom: 64px;
 }
 
