@@ -1,19 +1,23 @@
 .portfolio {
-	width: 1100px;
-	margin: 0 auto 136px;
+	max-width: 100%;
+	margin: 0 auto 9.7rem;
+
+	@media (max-width:1200px) {
+		max-width: 87%;
+	}
 
 	&__title {
 		position: relative;
 		font-weight: 800;
-		font-size: 32px;
-		line-height: 40px;
+		font-size: 2.28rem;
+		line-height: 2.85rem;
 
-		margin-bottom: 48px;
+		margin-bottom: 3.4rem;
 
 		&:before {
 			content: '';
 			display: block;
-			width: 40px;
+			width: 2.86rem;
 			height: 1px;
 			position: absolute;
 			left: -7%;
@@ -26,19 +30,23 @@
 	&__examples {
 		display: grid; 
 		grid-template-columns: 1fr 1fr 1fr; 
-		grid-template-rows: repeat(4, 270px); 
-		gap: 10px 10px; 
-		grid-template-areas: 
+		grid-template-rows: repeat(4, 19.3rem); 
+		gap: 0.71rem 0.71rem; 
+		grid-template-areas:
 		"one one two"
 		"three four two"
 		"five six seven"
 		"five eight eight";
 
-		margin-bottom: 64px;
+		margin-bottom: 4.57rem;
+
+		@media (max-width:1200px) {
+			grid-template-rows: repeat(4, 16.5rem);
+		}
 		
 		& > div {
 			position: relative;
-			padding: 32px;
+			padding: 2.28rem;
 
 			&::before {
 				content: '';
@@ -62,12 +70,11 @@
 			}
 		}
 
-
 		&-1 {
 			grid-area: one;
 			
 			&::before {
-				background: url("../image/main/build_1.png") no-repeat;
+				background: center/contain no-repeat url("../image/main/build_1.png");
 			}
 		}
 
@@ -75,7 +82,7 @@
 			grid-area: two;
 
 			&::before {
-				background: url("../image/main/build_2.png") no-repeat;
+				background: center/contain no-repeat url("../image/main/build_2.png");
 			}
 		}
 
@@ -83,7 +90,7 @@
 			grid-area: three;
 
 			&::before {
-				background: url("../image/main/build_3.png") no-repeat;
+				background: center/contain no-repeat url("../image/main/build_3.png");
 			}
 		}
 
@@ -91,14 +98,14 @@
 			grid-area: four;
 
 			&::before {
-				background: url("../image/main/build_4.png") no-repeat;
+				background: center/contain no-repeat url("../image/main/build_4.png");
 			}
 		}
 
 		&-5 {
 			grid-area: five;
 			&::before {
-				background: url("../image/main/build_5.png") no-repeat;
+				background:center/contain no-repeat url("../image/main/build_5.png");
 			}
 		}
 
@@ -106,7 +113,7 @@
 			grid-area: six;
 
 			&::before {
-				background: url("../image/main/build_6.png") no-repeat;
+				background: center/contain no-repeat url("../image/main/build_6.png");
 			}
 		}
 
@@ -114,7 +121,7 @@
 			grid-area: seven;
 
 			&::before {
-				background: url("../image/main/build_7.png") no-repeat;
+				background: center/contain no-repeat url("../image/main/build_7.png");
 			}
 		}
 
@@ -122,15 +129,15 @@
 			grid-area: eight;
 
 			&::before {
-				background: url("../image/main/build_8.png") no-repeat;
+				background: center/contain no-repeat url("../image/main/build_8.png");
 			}
 		}
 	}
 
 	.build-name {
 		font-weight: 800;
-		font-size: 20px;
-		line-height: 24px;
+		font-size: 1.43rem;
+		line-height: 1.43rem;
 		letter-spacing: 0.03rem;
 
 		color: #fff;
@@ -142,15 +149,15 @@
 		grid-template-rows: 1fr 1fr;
 
 		position: absolute;
-		bottom: 32px;
+		bottom: 2em;
 		opacity: 0;
 		transition: opacity 0.3s ease;
 
 		span {
 			font-family: 'Montserrat';
 			font-weight: 500;
-			font-size: 10px;
-			line-height: 12px;
+			font-size: 1rem;
+			line-height: 0.85rem;
 			
 			color: #FFF;
 			opacity: 0.7;
@@ -160,8 +167,8 @@
 
 		h4 {
 			font-weight: 800;
-			font-size: 14px;
-			line-height: 20px;
+			font-size: 1rem;
+			line-height: 1.43rem;
 
 			color: #fff;
 		}

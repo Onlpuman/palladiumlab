@@ -8,7 +8,7 @@
   justify-content: space-between;
   z-index: 1;
   
-  height: 85px;
+  height: 6rem;
 
   border-bottom: 1px solid #EBEBEB;
 
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 85px;
+    flex-basis: 6rem;
 
     border-width: 0 1px;
     border-style: solid;
@@ -32,6 +32,8 @@
 
     svg {
       fill: #222;
+      width: 2.14rem;
+      height: 2.14rem;
     }
 
     &:hover svg {
@@ -52,7 +54,6 @@
     flex-basis: 0;
   }
 
-
   &__hover-panel {
     position: absolute;
 
@@ -60,17 +61,17 @@
     justify-content: center;
     align-items: center;
 
-    width: calc(100% - 170px);
-    left: 85px;
-    height: 84px;
+    width: calc(100% - 12rem);
+    left: 6rem;
+    height: 6rem;
     
     background: #fff;
     z-index: 1;
 
     p {
       font-weight: 800;
-      font-size: 14px;
-      line-height: 20px;
+      font-size: 1rem;
+      line-height: 1.43rem;
       color: #222222;
 
       padding: 0 20px;
@@ -86,8 +87,8 @@
 
     a {
       font-weight: 800;
-      font-size: 30px;
-      line-height: 37px;
+      font-size: 2.14rem;
+      line-height: 2.64rem;
 
       color: #222222;
     }
@@ -109,12 +110,17 @@
   &__menu-link {
     position: relative;
     font-weight: 800;
-    line-height: 20px;
+    font-size: 1rem;
+    line-height: 1.43rem;
 
     color: rgba(34, 34, 34, 0.7);
 
     &:not(:last-child) {
-      margin-right: 50px;
+      margin-right: 4em;
+
+      @media (max-width:1200px) {
+        margin-right: 3em;
+      }
     }
 
     &:hover {
