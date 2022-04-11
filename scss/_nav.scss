@@ -8,7 +8,7 @@
   justify-content: space-between;
   z-index: 1;
   
-  height: 6rem;
+  height: 10%;
 
   border-bottom: 1px solid #EBEBEB;
 
@@ -16,7 +16,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-basis: 6rem;
+    flex-basis: 6%;
 
     border-width: 0 1px;
     border-style: solid;
@@ -32,9 +32,11 @@
 
     svg {
       fill: #222;
-      width: 2.14rem;
+      width: 2.4rem;
       height: 2.14rem;
     }
+
+    
 
     &:hover svg {
       fill: #C6876D;
@@ -45,6 +47,14 @@
       display: flex;
     }
   }
+
+  .map svg,
+  .tel svg {
+    width: 1.28rem;
+    height: 1.28rem;
+  }
+
+  
 
   &__menu-left {
     display: flex;
@@ -74,7 +84,7 @@
       line-height: 1.43rem;
       color: #222222;
 
-      padding: 0 20px;
+      padding: 0 1.43rem;
 
       &:first-child {
         border-right: 1px solid #EBEBEB;
@@ -117,10 +127,6 @@
 
     &:not(:last-child) {
       margin-right: 4em;
-
-      @media (max-width:1200px) {
-        margin-right: 3em;
-      }
     }
 
     &:hover {

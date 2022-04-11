@@ -1,10 +1,7 @@
 .portfolio {
-	max-width: 100%;
-	margin: 0 auto 9.7rem;
+	max-width: 76%;
+	margin: 0 auto 10%;
 
-	@media (max-width:1200px) {
-		max-width: 87%;
-	}
 
 	&__title {
 		position: relative;
@@ -12,7 +9,7 @@
 		font-size: 2.28rem;
 		line-height: 2.85rem;
 
-		margin-bottom: 3.4rem;
+		margin-bottom: 5%;
 
 		&:before {
 			content: '';
@@ -30,23 +27,31 @@
 	&__examples {
 		display: grid; 
 		grid-template-columns: 1fr 1fr 1fr; 
-		grid-template-rows: repeat(4, 19.3rem); 
-		gap: 0.71rem 0.71rem; 
+		grid-template-rows: repeat(4, 270px); 
+		gap: 10px 10px; 
 		grid-template-areas:
 		"one one two"
 		"three four two"
 		"five six seven"
 		"five eight eight";
 
-		margin-bottom: 4.57rem;
+		margin-bottom: 6%;
 
 		@media (max-width:1200px) {
-			grid-template-rows: repeat(4, 16.5rem);
+			gap: 8px 8px;
+		}
+
+		@media (max-width:992px) {
+			gap: 6px 6px;
+		}
+		
+		@media (max-width:768px) {
+			gap: 4px 4px;
 		}
 		
 		& > div {
 			position: relative;
-			padding: 2.28rem;
+			padding: 2.3rem;
 
 			&::before {
 				content: '';
@@ -74,7 +79,7 @@
 			grid-area: one;
 			
 			&::before {
-				background: center/contain no-repeat url("../image/main/build_1.png");
+				background: center/cover no-repeat url("../image/main/build_1.png");
 			}
 		}
 
@@ -82,7 +87,7 @@
 			grid-area: two;
 
 			&::before {
-				background: center/contain no-repeat url("../image/main/build_2.png");
+				background: center/cover no-repeat url("../image/main/build_2.png");
 			}
 		}
 
@@ -90,7 +95,7 @@
 			grid-area: three;
 
 			&::before {
-				background: center/contain no-repeat url("../image/main/build_3.png");
+				background: center/cover no-repeat url("../image/main/build_3.png");
 			}
 		}
 
@@ -98,14 +103,14 @@
 			grid-area: four;
 
 			&::before {
-				background: center/contain no-repeat url("../image/main/build_4.png");
+				background: center/cover no-repeat url("../image/main/build_4.png");
 			}
 		}
 
 		&-5 {
 			grid-area: five;
 			&::before {
-				background:center/contain no-repeat url("../image/main/build_5.png");
+				background:center/cover no-repeat url("../image/main/build_5.png");
 			}
 		}
 
@@ -113,7 +118,7 @@
 			grid-area: six;
 
 			&::before {
-				background: center/contain no-repeat url("../image/main/build_6.png");
+				background: center/cover no-repeat url("../image/main/build_6.png");
 			}
 		}
 
@@ -121,7 +126,7 @@
 			grid-area: seven;
 
 			&::before {
-				background: center/contain no-repeat url("../image/main/build_7.png");
+				background: center/cover no-repeat url("../image/main/build_7.png");
 			}
 		}
 
@@ -129,7 +134,7 @@
 			grid-area: eight;
 
 			&::before {
-				background: center/contain no-repeat url("../image/main/build_8.png");
+				background: center/cover no-repeat url("../image/main/build_8.png");
 			}
 		}
 	}
