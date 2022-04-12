@@ -26,10 +26,22 @@
 		content: '';
 		display: block;
 		width: 100%;
-		height: 1.5px;
+		height: 1px;
 		position: absolute;
 		top: 0;
 		
 		background-color: #222222;
 	}
+}
+
+.copyright div {
+	display: flex;
+}
+
+.copyright div:nth-child(1) {
+	text-align: start;
+}
+
+.copyright div:nth-child(2) {
+	text-align: end;
 }
