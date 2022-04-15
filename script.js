@@ -34,47 +34,30 @@ for (let tab of tabs) {
 
 
 
-const mapButton = document.querySelector('.nav-burger__icon.map');
+const buttonMap = document.querySelector('.nav-burger__icon.map');
 const panelMap = document.querySelector('.nav-burger__panel-map');
 
-const telButton = document.querySelector('.nav-burger__icon.tel');
+const buttonTel = document.querySelector('.nav-burger__icon.tel');
 const panelTel = document.querySelector('.nav-burger__panel-tel');
 
-const burgerButton = document.querySelector('.nav-burger__icon.burger-button');
-const burgerMenu = document.querySelector('.nav-burger__menu');
+const buttonBurger = document.querySelector('.nav-burger__icon.burger-button');
+const menuBurger = document.querySelector('.nav-burger__menu');
 
-const appearance = (activeButton, activePanel) => {
-	activeButton.addEventListener('click', () => {
-		const allButton = document.querySelectorAll('.nav-burger__icon');
+const allPanel = document.querySelectorAll('.js-panel')
+function appearance (activeButton, activeMenu) {
+	activeButton.addEventListener('click', (event) => {
+		//const allButton = document.querySelectorAll('.nav-burger__icon');
 		
-
-		allButton.forEach(button => {
-			activePanel.classList.remove('js-appearance');
-			console.log('1');
+		allPanel.forEach(panel => {
+			if (event.currentTarget.nextElementSibling !== panel) {
+				panel.classList.remove('js-appearance');
+			}
 		});
-
-		activePanel.classList.toggle('js-appearance');
-		//console.log('2');
-
-		
+		activeMenu.classList.toggle('js-appearance');
 	});
 };
 
-appearance(mapButton, panelMap);
-appearance(telButton, panelTel);
-appearance(burgerButton, burgerMenu);
 
-
-/* const crosses = document.querySelectorAll('.nav-burger__icon-cross');
-const pics = document.querySelectorAll('.nav-burger__icon-pic');
-
-for (let pic of pics) {
-	//const crossLink = cross.querySelector('.nav-burger__icon-cross');
-	
-	pic.addEventListener('click', function(event) {
-		const cross = pic.querySelector('.nav-burger__icon-cross');
-		cross.style.display = 'block';
-		pic.style.display = 'none';
-		
-	});
-}; */
+appearance(buttonMap, panelMap);
+appearance(buttonTel, panelTel);
+appearance(buttonBurger, menuBurger);
