@@ -11,8 +11,12 @@ html {
 		font-size: 8px;
 	}
 
-	@media (max-width: 412px) {
+	@media (max-width: 550px) {
 		font-size: 6px;
+	}
+
+	@media (max-width: 414px) {
+		font-size: 10px;
 	}
 }
 
@@ -55,6 +59,47 @@ main {
 		top: 50%;
 
 		background-color: #222222;
+	}
+}
+
+.nav__hover-panel .button {
+	width: 15em;
+	margin: 0 30px;
+}
+
+.nav-burger__panel-tel .button {
+	width: 12rem;
+	margin: 0;
+
+	&::before {
+		content: '';
+		display: block;
+		width: 1em;
+		height: 1px;
+		position: absolute;
+		left: -0.5em;
+		top: 50%;
+
+		background-color: #222222;
+
+	}
+}
+
+.main .button {
+	width: 15em;
+	margin-bottom: 10%;
+}
+
+.portfolio .button {
+	width: 13em;
+}
+
+.contacts .button {
+	width: 18.5em;
+	margin: 0;
+
+	@media (max-width: 414px) {
+		margin: 0 auto;
 	}
 }
 

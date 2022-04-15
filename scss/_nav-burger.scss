@@ -1,0 +1,220 @@
+.nav-burger {
+	position: absolute;
+	top: 0;
+	right: 0;
+	left: 0;
+
+	justify-content: space-between;
+	z-index: 2;
+	height: 10%;
+
+	border-bottom: 1px solid #EBEBEB;
+
+	@media (min-width: 413px) {
+		display: none;
+	}
+
+	@media (max-width: 414px) {
+		display: flex;
+	}
+
+	&__icon {
+		position: relative;
+
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-basis: 33.33%;
+
+		border-width: 0 1px;
+		border-style: solid;
+		border-color: #EBEBEB;
+
+		&:nth-child(1) {
+			border-left-width: 0;
+		}
+
+		&:nth-child(5) {
+			border-right-width: 0;
+		}
+
+		&-pic {
+			fill: #222;
+			width: 30%;
+			height: 30%;
+		}
+
+		&:hover svg {
+			fill: #C6876D;
+		}
+
+		&-cross {
+			display: none;
+			position: absolute;
+			left: 35%;
+			width: 30%;
+			height: 30%;
+		}
+	}
+
+	&__panel-map,
+	&__panel-tel {
+		position: absolute;
+		top: 103%;
+
+		display: none;
+		flex-direction: column;
+		justify-content: center;
+		width: 100%;
+		height: 438%;
+	
+		//padding-top: 8%;
+	
+		background-color: #fff;
+		z-index: 1;
+	
+		p {
+			font-weight: 800;
+			font-size: 1.2rem;
+			line-height: 2.4rem;
+			color: #222222;
+	
+			margin-bottom: 10%;
+	
+			//padding: 0 1.43rem;
+	
+			/* &:first-child {
+					border-right: 1px solid #EBEBEB;
+				} */
+		}
+	
+		span {
+			color: #C6876D;
+		}
+	}
+
+	&__panel-map {
+		padding-left: 10%;
+	}
+
+	&__panel-tel {
+		flex-direction: row;
+		align-items: center;
+		
+
+		a {
+			font-weight: 800;
+			font-size: 1.2rem;
+			line-height: 1.4rem;
+		
+			padding: 4px;
+			margin: 1.5% 3%;
+			
+			color: #222222;
+		}
+		
+	}
+
+	/* .map svg,
+	.tel svg {
+		width: 1.28rem;
+		height: 1.28rem;
+	} */
+
+	.burger-button {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.burger-button::before,
+	.burger-button::after,
+	.burger-button > span {
+		position: relative;
+		content: "";
+		display: block;
+		width: 26%;
+		height: 2px;
+		
+		background-color: #222222;
+	}
+
+	.burger-button:hover::before,
+	.burger-button:hover::after,
+	.burger-button:hover>span {
+		background-color: #C6876D;
+	}
+
+	.burger-button::before{
+		bottom: 6px;
+	}
+
+	.burger-button::after{
+		top: 6px;
+	}
+
+	&__menu {
+		position: absolute;
+		top: 103%;
+		right: 0;
+
+		display: none;
+
+		flex-direction: column;
+		justify-content: center;
+
+		width: 100%;
+		height: 438%;
+
+		text-align: end;
+
+		padding-right: 10%;
+
+		z-index: 0;
+		background-color: #fff;
+
+		&-link {
+			position: relative;
+		
+			//right: 11%;
+		
+			font-weight: 800;
+			font-size: 1.2rem;
+			line-height: 1.4rem;
+
+			padding: 4px;
+		
+			color: rgba(34, 34, 34, 0.7);
+
+			&:not(:last-child) {
+				margin-bottom: 6%;
+			}
+		
+			&:hover {
+				color: #222;
+			}
+		
+			span {
+				position: relative;
+			}
+		
+			&:hover span:after {
+				content: '';
+				width: 100%;
+				height: 1px;
+		
+				position: absolute;
+				left: 0;
+				bottom: -5px;
+				background-color: #222222;
+			}
+		}
+	}
+
+	.js-appearance {
+		display: flex;
+		/* opacity: 0;
+		transition: opacity .5s ease; */
+		//z-index: 2;
+	}
+}
+

@@ -2,6 +2,11 @@
 	max-width: 76%;
 	margin: 0 auto 10%;
 
+	@media (max-width:768px) {
+		max-width: 84%;
+		margin: 0 auto 16%;
+	}
+
 
 	&__title {
 		position: relative;
@@ -21,19 +26,30 @@
 			top: 50%;
 
 			background-color: #222222;
+
+			@media (max-width:414px) {
+				width: 1.86rem;
+			}
+		}
+
+		@media (max-width:414px) {
+			font-size: 1.6rem;
+			line-height: 2rem;
+		
+			margin-bottom: 10%;
 		}
 	}
 
 	&__examples {
 		display: grid; 
-		grid-template-columns: 1fr 1fr 1fr; 
+		grid-template-columns: repeat(3, 1fr);
 		grid-template-rows: repeat(4, 270px); 
 		gap: 10px 10px; 
 		grid-template-areas:
-		"one one two"
-		"three four two"
-		"five six seven"
-		"five eight eight";
+			"one one two"
+			"three four two"
+			"five six seven"
+			"five eight eight";
 
 		margin-bottom: 6%;
 
@@ -52,14 +68,27 @@
 			gap: 4px 4px;
 		}
 
-		@media (max-width:412px) {
-			grid-template-rows: repeat(4, 76px);
-			gap: 4px 4px;
+		@media (max-width:414px) {
+			grid-template-columns: repeat(2, 1fr);
+			grid-template-rows: repeat(6, 140px);
+			grid-template-areas: 
+				"one one"
+				"three four"
+				"five six "
+				"five two"
+				"seven two"
+				"eight eight";
+
+			margin-bottom: 10%;
 		}
 		
 		& > div {
 			position: relative;
 			padding: 2.3rem;
+
+			@media (max-width:414px) {
+				padding: 1.3rem;
+			}
 
 			&::before {
 				content: '';
@@ -154,6 +183,10 @@
 		letter-spacing: 0.03rem;
 
 		color: #fff;
+
+		@media (max-width:414px) {
+			font-size: 1rem;
+		}
 	}
 
 	.build {
@@ -166,16 +199,26 @@
 		opacity: 0;
 		transition: opacity 0.3s ease;
 
+		@media (max-width: 414px) {
+			bottom: 1em;
+		}
+
 		span {
 			font-family: 'Montserrat';
 			font-weight: 500;
 			font-size: 1rem;
-			line-height: 0.85rem;
+			line-height: 1.2rem;
 			
 			color: #FFF;
 			opacity: 0.7;
 
 			margin-bottom: 8px;
+
+			@media (max-width: 414px) {
+				font-size: 0.8rem;
+				line-height: 1rem;
+				margin-bottom: 4px;
+			}
 		}
 
 		h4 {
@@ -184,10 +227,11 @@
 			line-height: 1.43rem;
 
 			color: #fff;
-		}
-	}
 
-	button {
-		width: 13em;
+			@media (max-width: 414px) {
+				font-size: 0.8rem;
+				line-height: 1rem;
+			}
+		}
 	}
 }

@@ -9,17 +9,31 @@
 
 	margin: 0 auto;
 
+	@media (max-width: 414px) {
+		max-width: 84%;
+		height: 3.3rem;
+	}
+
 	&__agreement, &__author {
 		font-family: 'Montserrat';
 		font-weight: 400;
 		font-size: 0.93rem;
 		line-height: 1.71rem;
+
+		@media (max-width: 414px) {
+			font-size: 0.7rem;
+			line-height: 1rem;
+		}
 	}
 
 	strong {
 		font-style: normal;
 		font-weight: 800;
 		font-size: 1rem;
+
+		@media (max-width: 414px) {
+			font-size: 0.7rem;
+		}
 	}
 
 	&:before {
