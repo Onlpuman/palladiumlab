@@ -110,11 +110,11 @@
 
 			<nav class="nav-burger">
 
-				<div class="nav-burger__icon map" href="#">
-					<svg class="nav-burger__icon-pic" width="15" height="18">
+				<div class="nav-burger__icon map js-button" href="#">
+					<svg class="nav-burger__icon-pic pic-closed" width="15" height="18">
 						<use xlink:href="#map-marker" />
 					</svg>
-					<svg class="nav-burger__icon-cross" version="1.1" id="cross-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
+					<svg class="nav-burger__icon-cross pic-open" version="1.1" id="cross-15" xmlns="http://www.w3.org/2000/svg" width="15px" height="15px" viewBox="0 0 15 15">
 						<path
 							d="M2.64,1.27L7.5,6.13l4.84-4.84C12.5114,1.1076,12.7497,1.0029,13,1c0.5523,0,1,0.4477,1,1&#xA;&#x9;c0.0047,0.2478-0.093,0.4866-0.27,0.66L8.84,7.5l4.89,4.89c0.1648,0.1612,0.2615,0.3796,0.27,0.61c0,0.5523-0.4477,1-1,1&#xA;&#x9;c-0.2577,0.0107-0.508-0.0873-0.69-0.27L7.5,8.87l-4.85,4.85C2.4793,13.8963,2.2453,13.9971,2,14c-0.5523,0-1-0.4477-1-1&#xA;&#x9;c-0.0047-0.2478,0.093-0.4866,0.27-0.66L6.16,7.5L1.27,2.61C1.1052,2.4488,1.0085,2.2304,1,2c0-0.5523,0.4477-1,1-1&#xA;&#x9;C2.2404,1.0029,2.4701,1.0998,2.64,1.27z" />
 					</svg>
@@ -125,11 +125,11 @@
 				</div>
 
 				
-				<div class="nav-burger__icon tel" href="#">
-					<svg class="nav-burger__icon-pic" width="19" height="18">
+				<div class="nav-burger__icon tel js-button" href="#">
+					<svg class="nav-burger__icon-pic pic-closed" width="19" height="18">
 						<use xlink:href="#phone" />
 					</svg>
-					<svg class="nav-burger__icon-cross" version="1.1" id="cross-15" xmlns="http://www.w3.org/2000/svg" width="15px"
+					<svg class="nav-burger__icon-cross pic-open" version="1.1" id="cross-15" xmlns="http://www.w3.org/2000/svg" width="15px"
 						height="15px" viewBox="0 0 15 15">
 						<path
 							d="M2.64,1.27L7.5,6.13l4.84-4.84C12.5114,1.1076,12.7497,1.0029,13,1c0.5523,0,1,0.4477,1,1&#xA;&#x9;c0.0047,0.2478-0.093,0.4866-0.27,0.66L8.84,7.5l4.89,4.89c0.1648,0.1612,0.2615,0.3796,0.27,0.61c0,0.5523-0.4477,1-1,1&#xA;&#x9;c-0.2577,0.0107-0.508-0.0873-0.69-0.27L7.5,8.87l-4.85,4.85C2.4793,13.8963,2.2453,13.9971,2,14c-0.5523,0-1-0.4477-1-1&#xA;&#x9;c-0.0047-0.2478,0.093-0.4866,0.27-0.66L6.16,7.5L1.27,2.61C1.1052,2.4488,1.0085,2.2304,1,2c0-0.5523,0.4477-1,1-1&#xA;&#x9;C2.2404,1.0029,2.4701,1.0998,2.64,1.27z" />
@@ -141,9 +141,9 @@
 				</div>
 
 				
-				<div class="nav-burger__icon burger-button" href="#">
-					<span></span>
-					<svg class="nav-burger__icon-cross" version="1.1" id="cross-15" xmlns="http://www.w3.org/2000/svg" width="15px"
+				<div class="nav-burger__icon js-button" href="#">
+					<span class="pic-closed"></span>
+					<svg class="nav-burger__icon-cross pic-open" version="1.1" id="cross-15" xmlns="http://www.w3.org/2000/svg" width="15px"
 						height="15px" viewBox="0 0 15 15">
 						<path
 							d="M2.64,1.27L7.5,6.13l4.84-4.84C12.5114,1.1076,12.7497,1.0029,13,1c0.5523,0,1,0.4477,1,1&#xA;&#x9;c0.0047,0.2478-0.093,0.4866-0.27,0.66L8.84,7.5l4.89,4.89c0.1648,0.1612,0.2615,0.3796,0.27,0.61c0,0.5523-0.4477,1-1,1&#xA;&#x9;c-0.2577,0.0107-0.508-0.0873-0.69-0.27L7.5,8.87l-4.85,4.85C2.4793,13.8963,2.2453,13.9971,2,14c-0.5523,0-1-0.4477-1-1&#xA;&#x9;c-0.0047-0.2478,0.093-0.4866,0.27-0.66L6.16,7.5L1.27,2.61C1.1052,2.4488,1.0085,2.2304,1,2c0-0.5523,0.4477-1,1-1&#xA;&#x9;C2.2404,1.0029,2.4701,1.0998,2.64,1.27z" />
@@ -311,6 +311,6 @@
 			<symbol id="phone" viewBox="0 0 19 18"><path fill-rule="evenodd" clip-rule="evenodd" d="M13.971.039a1.527 1.527 0 0 0-1.742.882l-.001.003-1.549 3.61c-.267.623-.09 1.35.44 1.779l1.486 1.218a11.21 11.21 0 0 1-4.573 4.572l-1.22-1.489a1.52 1.52 0 0 0-1.777-.437l-3.608 1.545-.006.003a1.533 1.533 0 0 0-.882 1.745l.773 3.351c.16.688.772 1.18 1.484 1.18C11.46 18 18.498 10.98 18.5 2.301A1.513 1.513 0 0 0 17.323.815L13.97.039Zm-.366 1.479-1.547 3.607 2.413 1.996-.248.529A12.692 12.692 0 0 1 8.15 13.72l-.528.248-1.997-2.413L2.023 13.1a.042.042 0 0 0-.02.019C2 13.126 2 13.13 2 13.13v.001l.773 3.351c.002.01.01.017.023.017C10.635 16.5 17 10.148 17 2.3v-.014l-.002-.003-.003-.003-.007-.002h-.002L13.635 1.5h-.008a.026.026 0 0 0-.008.002.03.03 0 0 0-.014.015Z"/></symbol>
 			<symbol id="arrow-right" viewBox="0 0 41 40"><circle cx="20.125" cy="20" r="19.5" stroke="white" stroke-opacity="0.3" fill="transparent"/><g clip-path="url(#clip0_5_2915)"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.6244 20.75V19.25L20.6244 19.25L20.6244 13.7493L27.6251 20.75L12.6244 20.75Z" fill="white"/></g><defs><clipPath id="clip0_5_2915"><rect width="15" height="15" fill="#fff" transform="translate(12.625 12.5)"/></clipPath></defs></symbol>
 		</svg>
-		<script src="script.js"></script>
+		<script src="script copy.js"></script>
 	</body>
 </html>
