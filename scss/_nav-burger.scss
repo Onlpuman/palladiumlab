@@ -55,6 +55,42 @@
 			width: 30%;
 			height: 30%;
 		}
+
+		&.js-open .pic-open {
+			display: initial;
+		}
+
+		&.js-open .pic-closed {
+			display: none;
+		}
+
+		&>span::before,
+		&>span::after,
+		&>span {
+			position: relative;
+			content: "";
+			display: block;
+			width: 26%;
+			height: 2px;
+		
+			background-color: #222222;
+		}
+		
+		&:hover > span::before,
+		&:hover > span::after,
+		&:hover > span {
+			background-color: #C6876D;
+		}
+		
+		&>span::before {
+			width: 100%;
+			bottom: 8px;
+		}
+		
+		&>span::after {
+			width: 100%;
+			top: 6px;
+		}
 	}
 
 	&__panel-map,
@@ -68,8 +104,6 @@
 		width: 100%;
 		height: 438%;
 	
-		//padding-top: 8%;
-	
 		background-color: #fff;
 		z-index: 1;
 	
@@ -80,12 +114,6 @@
 			color: #222222;
 	
 			margin-bottom: 10%;
-	
-			//padding: 0 1.43rem;
-	
-			/* &:first-child {
-					border-right: 1px solid #EBEBEB;
-				} */
 		}
 	
 		span {
@@ -101,7 +129,6 @@
 		flex-direction: row;
 		align-items: center;
 		
-
 		a {
 			font-weight: 800;
 			font-size: 1.2rem;
@@ -112,44 +139,6 @@
 			
 			color: #222222;
 		}
-		
-	}
-
-	/* .map svg,
-	.tel svg {
-		width: 1.28rem;
-		height: 1.28rem;
-	} */
-
-	.burger-button {
-		display: flex;
-		flex-direction: column;
-	}
-
-	.burger-button::before,
-	.burger-button::after,
-	.burger-button > span {
-		position: relative;
-		content: "";
-		display: block;
-		width: 26%;
-		height: 2px;
-		
-		background-color: #222222;
-	}
-
-	.burger-button:hover::before,
-	.burger-button:hover::after,
-	.burger-button:hover>span {
-		background-color: #C6876D;
-	}
-
-	.burger-button::before{
-		bottom: 6px;
-	}
-
-	.burger-button::after{
-		top: 6px;
 	}
 
 	&__menu {
@@ -174,9 +163,7 @@
 
 		&-link {
 			position: relative;
-		
-			//right: 11%;
-		
+				
 			font-weight: 800;
 			font-size: 1.2rem;
 			line-height: 1.4rem;
@@ -212,9 +199,6 @@
 
 	.js-appearance {
 		display: flex;
-		/* opacity: 0;
-		transition: opacity .5s ease; */
-		//z-index: 2;
 	}
 }
 

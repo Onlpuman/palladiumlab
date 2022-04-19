@@ -4,11 +4,10 @@ header.container {
 	position: relative;
 
 	@media (max-width: 414px) {
-		margin-bottom: 16%;
-		
 		background: bottom / contain no-repeat url("../image/main/build_6.png");
+
+		margin-bottom: 16%;
 	}
-	
 }
 
 @media (max-width: 414px) {
@@ -124,11 +123,6 @@ header.container {
 		padding-top: 440px;
 		padding-bottom: 0;
 	}
-
-	/* @media (max-width: 390px) {
-		padding-top: 116%;
-		
-	} */
 
 	.services__link {
 		display: flex;
@@ -326,8 +320,8 @@ header.container {
 	fill: #fff;
 }
 
-.services.open ~ .nav-burger .burger-button::before,
-.services.open ~ .nav-burger .burger-button::after,
-.services.open ~ .nav-burger .burger-button > span {
+.services.open ~ .nav-burger .nav-burger__icon > span::after,
+.services.open ~ .nav-burger .nav-burger__icon > span::before,
+.services.open ~ .nav-burger .nav-burger__icon > span {
 	background-color: #fff;
 }
