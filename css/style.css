@@ -287,9 +287,9 @@ main {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: calc(100% - 12rem);
-  left: 6rem;
-  height: 6rem;
+  width: 86%;
+  left: 7%;
+  height: 5rem;
   background: #fff;
   z-index: 1;
 }
@@ -1014,7 +1014,10 @@ header.container {
   -ms-grid-rows: (270px)[4];
       grid-template-rows: repeat(4, 270px);
   gap: 10px 10px;
-      grid-template-areas: "one one two" "three four two" "five six seven" "five eight eight";
+      grid-template-areas: "one one two"
+ "three four two"
+ "five six seven"
+ "five eight eight";
   margin-bottom: 6%;
 }
 
@@ -1048,7 +1051,12 @@ header.container {
         grid-template-columns: repeat(2, 1fr);
     -ms-grid-rows: (140px)[6];
         grid-template-rows: repeat(6, 140px);
-        grid-template-areas: "one one" "three four" "five six " "five two" "seven two" "eight eight";
+        grid-template-areas: "one one"
+ "three four"
+ "five six "
+ "five two"
+ "seven two"
+ "eight eight";
     margin-bottom: 10%;
   }
 }
