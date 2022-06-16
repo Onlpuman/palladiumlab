@@ -98,11 +98,17 @@ body img {
   html {
     font-size: 10px;
   }
+  .main__icon {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
   html {
     font-size: 8px;
+  }
+  .main__icon {
+    display: none;
   }
   
 }
@@ -110,6 +116,9 @@ body img {
 @media (max-width: 550px) {
   html {
     font-size: 6px;
+  }
+  .main__icon {
+    display: none;
   }
 }
 
