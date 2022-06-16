@@ -107,11 +107,17 @@ body img {
   html {
     font-size: 6px;
   }
+  .main__icon {
+    display: none;
+  }
 }
 
 @media (max-width: 414px) {
   html {
     font-size: 10px;
+  }
+  .main__icon {
+    display: initial;
   }
 }
 
